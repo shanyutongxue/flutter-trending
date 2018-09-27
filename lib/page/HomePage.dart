@@ -31,10 +31,9 @@ class _HomePageState extends State<HomePage>
         body: new TabBarView(
           controller: _tabController,
           children: [
-            new Icon(Icons.directions_car),
-            new Icon(Icons.directions_bike),
-            new Icon(Icons.directions_boat),
-            new Icon(Icons.directions_bus)
+            new Icon(Icons.trending_flat),
+            new Icon(Icons.new_releases),
+            new Icon(Icons.settings),
           ],
         ),
         bottomNavigationBar: new Material(
@@ -58,8 +57,7 @@ class Choice {
 }
 
 const List<Choice> choices = const <Choice>[
-  const Choice(title: 'CAR', icon: Icons.directions_car),
-  const Choice(title: 'BICYCLE', icon: Icons.directions_bike),
-  const Choice(title: 'BOAT', icon: Icons.directions_boat),
-  const Choice(title: 'BUS', icon: Icons.directions_bus),
+  const Choice(title: 'Trending', icon: Icons.trending_up),
+  const Choice(title: 'Hacker News', icon: Icons.new_releases),
+  const Choice(title: '设置', icon: Icons.settings),
 ];
