@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:github_trending/page/TrendPage.dart';
 import 'package:github_trending/page/HackerNewsPage.dart';
+import 'package:github_trending/page/SettingPage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -34,7 +35,7 @@ class _HomePageState extends State<HomePage>
           children: [
             new TrendPage(),
             new HackerNewsPage(),
-            new Icon(Icons.settings),
+            new SettingPage(),
           ],
         ),
         bottomNavigationBar: new Material(
